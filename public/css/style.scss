@@ -1,0 +1,826 @@
+@charset "utf-8";
+$mycolor: #ffffff;
+$secondcolor: #2b2b2b;
+$mywidth: 100vw;
+$h200: 100px;
+
+@mixin text {
+  color: #2b2b2b;
+  letter-spacing: 0.08em;
+  font-size: 16px;
+  line-height: 2;
+}
+
+@mixin left($top) {
+  width: 35%;
+  top: $top;
+  left: 3%;
+}
+
+@mixin right($top) {
+  width: 32%;
+  top: $top;
+  right: 8%;
+}
+
+@mixin textposition($top) {
+  top: $top;
+  left: 25%;
+}
+
+@mixin media {
+  @media (max-width: 575px) {
+    font-size: 2em;
+  }
+}
+
+@mixin mediatop($top) {
+  @media (max-width: 575px) {
+    top: $top;
+  }
+}
+
+@mixin mediumtop($top) {
+  @media (max-width: 767px) {
+    top: $top;
+  }
+}
+
+@mixin largeh1 {
+  @media screen and (max-width: 991px) {
+    font-size: 1.5em;
+  }
+}
+
+@mixin mediumh1 {
+  @media screen and (max-width: 767px) {
+    font-size: 1.3em;
+  }
+}
+
+@mixin largetext($top) {
+  @media (max-width: 991px) {
+    top: $top;
+    font-size: .9em;
+  }
+}
+
+@mixin largeleft($top) {
+    @media (max-width: 991px) {
+        width: 30%;
+        left: 5%;
+        top: $top;
+    }
+}
+
+@mixin largeright($top) {
+    @media (max-width: 991px) {
+        width: 30%;
+        right: 10%;
+        top: $top;
+    }
+}
+
+@mixin mediumleft($top) {
+    @media (max-width: 767px) {
+        left: 7%;
+        top: $top;
+    }
+}
+
+@mixin mediumright($top) {
+    @media (max-width: 767px) {
+        right: 14%;
+        top: $top;
+        width: 25%;
+    }
+}
+
+@mixin largetop($top) {
+  @media (max-width: 991px) {
+    top: $top;
+  }
+}
+
+@mixin largeheight($height) {
+    @media (max-width: 991px) {
+      height: $height;
+    }
+}
+
+@mixin largedisplay($display) {
+    @media (max-width: 991px) {
+      display: $display;
+    }
+}
+
+@mixin mediadisplay($display) {
+  @media (max-width: 575px) {
+    display: $display;
+  }
+}
+
+@mixin mediumdisplay($display) {
+  @media (max-width: 767px) {
+    display: $display;
+  }
+}
+
+@mixin mediumheight($height) {
+    @media screen and (max-width: 767px) {
+        height: $height;
+    }
+}
+
+@mixin spheight($height) {
+    @media screen and (max-width: 575px) {
+        height: $height;
+    }
+}
+
+@mixin spsizing($top) {
+  @media (max-width: 575px) {
+    width: 75%;
+    top: $top;
+  }
+}
+
+@mixin smallsizing($top) {
+  @media (max-width: 380px) {
+    width: 70%;
+    top: $top;
+  }
+}
+
+@mixin spleft($top) {
+  @media (max-width: 575px) {
+    width: 540px;
+    max-width: 90%;
+    position: absolute;
+    left: 0;
+    top: $top;
+  }
+}
+
+@mixin spright($top) {
+  @media (max-width: 575px) {
+    width: 520px;
+    max-width: 90%;
+    position: absolute;
+    right: 0;
+    top: $top;
+  }
+}
+
+@mixin smalltop($top) {
+  @media (max-width: 380px) {
+    top: $top;
+  }
+}
+
+@mixin smallheight($height) {
+  @media (max-width: 380px) {
+    height: $height;
+  }
+}
+
+@mixin Xlargetop($top) {
+    @media (max-width: 1199px) {
+      top: $top;
+    }
+}
+
+@mixin Xlargedisplay($display) {
+    @media (max-width: 1199px) {
+      display: $display;
+    }
+}
+
+@mixin Xlargeheight($height) {
+    @media (max-width: 1199px) {
+        height: $height;
+    }
+}
+
+@mixin padding {
+    @media (max-width: 575px) {
+        padding: 0;
+        margin: 0;
+    }
+}
+
+@mixin spcontent {
+    bottom: 0;
+    width: 78%;
+}
+
+body {
+  font-family: "ヒラギノ角ゴ ProN W3", "Hiragino Sans W3", "Hiragino Kaku Gothic ProN",
+    "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic",
+    sans-serif "";
+  background-image: url(../shiro_pc-assets/background.jpg);
+  @media (max-width: 575px) {
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+
+  header {
+    height: 690px;
+    color: $mycolor;
+    position: relative;
+    padding: 0;
+    background-image: url(../shiro_pc-assets/_shiro2.png);
+    background-size: cover;
+    background-position: center;
+    @media (max-width: 767px) {
+        height: 520px;
+    }
+    @media (max-width: 575px) {
+        background-image: url(../shiro_pc-assets/headersp.jpg);
+        height: 420px;
+    }
+    @media (max-width: 380px) {
+        height: 390px;
+    }
+
+    p {
+      margin-left: 10%;
+      padding-top: 3%;
+      font-size: 20px;
+      @include media();
+    }
+
+    #open {
+      top: 5%;
+      right: 3%;
+      @include media();
+      font-weight: .2em;
+
+      @media (max-width: 575px) {
+        top: 4%;
+        right: 3%;
+      }
+    }
+
+    div {
+      margin: 0 auto;
+      padding-top: 12%;
+
+      h1 {
+        font-size: 5em;
+      }
+
+      h2 {
+        font-size: 1em;
+      }
+    }
+  }
+
+  main {
+    margin-top: 100px;
+
+    .sen {
+        margin: 20px auto;
+    }
+
+    #concept {
+      height: 820px;
+      @include largeheight(700px);
+      @include mediumheight(660px);
+      @include spheight(560px);
+      @include smallheight(400px);
+
+      #conceptsen {
+        @media (max-width: 767px) {
+          margin-top: 5%;
+        }
+      }
+      p {
+        @include text();
+        @media (max-width: 380px) {
+          font-size: .8em;
+        }
+      }
+
+      img {
+        z-index: 3;
+      }
+
+      #mainimg {
+        width: 100vw;
+      }
+    }
+
+    #graysp1 {
+      top: 350px;
+      @include Xlargetop(380px);
+      @include largetop(320px);
+      @include mediumtop(400px);
+      @include mediatop(380px);
+      @include smalltop(320px);
+      @media (max-width: 576px) {
+        margin: 0 auto;
+      }
+    }
+
+    #graysp2 {
+      @media (max-width: 991px) and (min-width: 575px) {
+          height: 400px;
+      }
+      top: 3200px;
+      height: 600px;
+      @include Xlargetop(2500px);
+      @include largetop(2000px);
+      @include mediumtop(1600px);
+      @include mediatop(3550px);
+      @include spheight(400px);
+      @include smalltop(3350px);
+    }
+
+    #works {
+      color: $secondcolor;
+      top: 50px;
+      z-index: 2;
+      height: 1700px;
+      @include largeheight(1200px);
+      @include mediumheight(800px);
+      @include spheight(2800px);
+      @include smallheight(2800px);
+      @include largetop(80px);
+      @include mediumtop(100px);
+      @include mediatop(90px);
+      @include smalltop(120px);
+      @include padding();
+
+      > h1 {
+        font-size: 3em;
+        @media screen and (max-width: 768px) {
+          font-size: 2em;
+        }
+      }
+
+      #flexzone {
+        @media (max-width: 767px) {
+          width: 100%;
+        }
+        @include mediadisplay(none);
+        #flex-start {
+          justify-items: start;
+          @include mediadisplay(none);
+        }
+
+        #flex-end {
+            @include mediadisplay(none);
+            @media screen and (max-width:575px) {
+                width: 100%;
+                height: 1200px;
+            }
+          img {
+            width: 100%;
+          }
+
+          #shiro4 {
+            @include mediadisplay(none);
+          }
+
+          #shiro5 {
+            margin-top: 60%;
+            @include spright(1908px);
+            @include smalltop(1350px);
+            @media screen and (max-width: 767px) {
+                margin-top: 120px;
+            }
+
+            @media (max-width: 575px) {
+              margin-top: 0;
+            }
+          }
+        }
+      }
+      #spcontent {
+          display: none;
+          @include spheight(2700px);
+          @include mediadisplay(block);
+          #giftsp {
+              height: 520px;
+              @include smallheight(535px);
+              #fs1 {
+                // background-image: url(../shiro_pc-assets/giftsp.jpg);
+                // background-position: center right;
+                // background-size: cover;
+                // background-repeat: no-repeat;
+                object-fit: cover;
+                @include spleft(0);
+                @include spheight(400px);
+              }
+              #giftsptext {
+                  @include spcontent();
+              }
+          }
+          #decosp {
+              height: 710px;
+              @include smallheight(720px);
+              #shiro44 {
+                // background-image: url(../shiro_pc-assets/decolationsp.jpg);
+                // background-size: contain;
+                // background-repeat: no-repeat;
+                object-fit: cover;
+                @include mediadisplay(block);
+                @include spright(0);
+                right: 0;
+                @include spheight(600px);
+                }
+                #decosptext {
+                    @include spcontent();
+                    right: 4%;
+                }
+          }
+          #weddingsp {
+              height: 720px;
+              #fs2 {
+                object-fit: cover;
+                // top: 240vh;
+                // background-image: url(../shiro_pc-assets/weddingsp.jpg);
+                // background-size: contain;
+                // background-repeat: no-repeat;
+                @include spleft(0);
+                @media (max-width: 575px) {
+                    left: 0;
+                }
+                @include spheight(600px);
+              }
+              #weddingsptext {
+                  @include spcontent();
+              }
+          }
+
+        #forsp {
+            height: 520px;
+            #shiro55 {
+                object-fit: cover;
+                // background-image: url(../shiro_pc-assets/shiro5.jpg);
+                // background-size: contain;
+                // background-repeat: no-repeat;
+                @include mediadisplay(block);
+                @include spright(0);
+                @include spheight(400px);
+            }
+            #forsptext {
+                @include spcontent();
+                right: 4%;
+            }
+        }
+      }
+
+
+      p {
+        @include text();
+        @media screen and (max-width: 991px) {
+          font-size: .9em;
+          line-height: 1.5;
+        }
+        @media (max-width: 767px) {
+          font-size: .7em;
+          line-height: 1.5;
+        }
+      }
+
+      #workstext {
+        @include mediadisplay(none);
+          #gift {
+              height: $h200;
+              @include left(650px);
+              @include Xlargetop(570px);
+              @include largeleft(420px);
+              @include mediumleft(310px);
+              @include spsizing(19%);
+              @include smalltop(450px);
+
+              @media (max-width: 575px) {
+                  left: 3%;
+                }
+                @media (max-width: 380px) {
+                    left: 7%;
+                }
+                h1 {
+                    @include largeh1();
+                    @include mediumh1();
+                }
+            }
+
+            #decoration {
+                height: $h200;
+                @include right(820px);
+                @include Xlargetop(690px);
+                @include largeright(510px);
+                @include mediumright(350px);
+                @include spsizing(1400px);
+                @include smallsizing(920px);
+                @media (max-width: 575px) {
+                    right: 17%;
+                }
+                @media (max-width: 380px) {
+                    right: 7%;
+                }
+                h1 {
+                    @include largeh1();
+                    @include mediumh1();
+                }
+            }
+
+            #wedding {
+                height: $h200;
+                @include left(1570px);
+                @include Xlargetop(1320px);
+                @include largeleft(960px);
+                @include mediumleft(680px);
+                @include spsizing(2160px);
+                @include smalltop(1400px);
+                @media (max-width: 575px) {
+                    left: 3%;
+                }
+                @media (max-width: 380px) {
+                    left: 7%;
+                }
+                h1 {
+                    @include largeh1();
+                    @include mediumh1();
+                }
+            }
+
+            #foryourself {
+                height: $h200;
+                @include right(1450px);
+                @include Xlargetop(1210px);
+                @include largeright(860px);
+                @include mediumright(610px);
+                @include spsizing(2740px);
+                @include smallsizing(1760px);
+                @media (max-width: 575px) {
+                    right: 17%;
+                }
+                @media (max-width: 380px) {
+                    right: 7%;
+                }
+                h1 {
+                    @include largeh1();
+                    @include mediumh1();
+                }
+            }
+        }
+        }
+
+        #florist {
+      top: 800px;
+      height: 700px;
+      @include largeheight(650px);
+      @include mediumheight(600px);
+      @include spheight(1500px);
+      @include smallheight(1200px);
+      @include Xlargetop(100px);
+      @include largetop(160px);
+      @include mediumtop(220px);
+      @include mediatop(270px);
+      @include smalltop(210px);
+      @include padding();
+
+      .row {
+        @include mediadisplay(block);
+        margin-left: 0;
+        margin-right: 0;
+        #fl1 {
+          @media (max-width: 575px) {
+            max-width: 100%;
+          }
+          @include mediadisplay(block);
+
+          #shiyu1 {
+            @include mediadisplay(none);
+          }
+
+          #shiyu2 {
+            display: none;
+            @include mediadisplay(block);
+          }
+        }
+
+        #fl2 {
+          @media (max-width: 575px) {
+            max-width: 100%;
+          }
+            #mao1 {
+              @include mediadisplay(none);
+            }
+
+            #mao2 {
+              display: none;
+              @include mediadisplay(block);
+            }
+        }
+        #fl3 {
+          @media (max-width: 575px) {
+            max-width: 100%;
+          }
+            #omichan1 {
+              @include mediadisplay(none);
+            }
+
+            #omichan2 {
+              display: none;
+              @include mediadisplay(block);
+            }
+        }
+      }
+    }
+
+    #shopinformation {
+      top: 970px;
+      height: 431px;
+      @include mediumheight(410px);
+      @include spheight(650px);
+      @include Xlargetop(150px);
+      @include largetop(170px);
+      @include mediumtop(240px);
+      @include mediatop(350px);
+      @include padding();
+
+      #shopsp{
+        display: none;
+        @include mediadisplay(block);
+      }
+
+      #shoppc{
+        @include mediadisplay(none);
+        object-fit: cover;
+      }
+
+      #shop111 {
+        @media (max-width: 991px) {
+          font-size: .8em;
+        }
+        @media (max-width: 767px) {
+            font-size: .7em;
+          }
+        @media (max-width: 575px) {
+          min-width: 100%;
+          line-height: 1.5em;
+          padding: 0;
+        }
+        @media (max-width: 380px) {
+          font-size: .6em;
+          padding: 0;
+        }
+        #shop1 {
+          margin: 0 auto;
+          @media  (max-width: 575px) {
+            width: 40%;
+          }
+
+          #sp1 {
+            margin: 0 auto;
+            @include textposition(10%);
+          }
+
+          #sp2 {
+            @include textposition(37%);
+          }
+
+          #sp3 {
+            @include textposition(58%);
+          }
+
+          #sp4 {
+            @include textposition(85%);
+          }
+        }
+      }
+      #shop2 {
+        #s2p1 {
+          top: 8%;
+          @include mediatop(1%);
+          @include largetop(0);
+          @include smalltop(4%);
+        }
+
+        #s2p2 {
+          top: 37%;
+          @include mediatop(34%);
+          @include largetop(35%);
+          @include smalltop(36%);
+        }
+
+        #s2p3 {
+          top: 58%;
+          @include mediatop(55%);
+          @include largetop(54%);
+        }
+
+        #s2p4 {
+          top: 85%;
+          @include mediatop(76%);
+          @include largetop(75%);
+          @include smalltop(80%);
+        }
+      }
+    }
+
+    #footer {
+      background-image: url(../shiro_pc-assets/shiro12.jpg);
+      background-size: cover;
+      top: 1250px;
+      height: 351px;
+      @include mediumheight(250px);
+      @include Xlargetop(450px);
+      @include largetop(200px);
+      @include mediumtop(270px);
+      @include padding();
+      h1 {
+        padding-top: 5%;
+      }
+      @include mediatop(300px);
+      @media (max-width: 575px) {
+        background-image: url(../shiro_pc-assets/footerbacksp.jpg);
+        height: 400px;
+        h1 {
+          padding-top: 20%;
+        }
+        img {
+          padding-top: 5%;
+        }
+        #ftext {
+          padding-top: 5%;
+        }
+      }
+
+      #contact {
+        background-image: url(../shiro_pc-assets/mailbox.jpg);
+        width: 25%;
+        height: 52px;
+        padding-top: .5em;
+        margin: 0 auto;
+        line-height: 32px;
+        .d-flex {
+            @media (max-width: 575px) {
+                position: relative;
+              }
+            img {
+                width: 40px;
+                height: 29px;
+                margin-top: -2em;
+                margin-right: 10px;
+                @media (max-width: 991px) {
+                  margin-top: -1.5em;
+                }
+                @media (max-width: 575px) {
+                  position: absolute;
+                  top: 10px;
+                  left: 10%;
+                  height: 35px;
+                }
+                @media (max-width: 380px) {
+                    position: absolute;
+                    top: 12px;
+                    left: 5%;
+                  }
+              }
+              p {
+                  padding-bottom: 10px;
+                  text-align: center;
+                  @media (max-width: 380px) {
+                    line-height: 20px;
+                    padding-left: 20px;
+                  }
+              }
+            }
+            @media (max-width: 991px) {
+              background-image: url(../shiro_pc-assets/fromsp.jpg);
+              background-size: cover;
+              width: 30%;
+            }
+            @media (max-width: 575px) {
+                width: 50%;
+                height: 13%;
+                margin-top: 3%;
+                font-size: .8em;
+            }
+            @media (max-width: 380px) {
+                width: 60%;
+                p {
+                    margin-top: 3%;
+                }
+            }
+        }
+    }
+
+    #copy {
+      top: 1280px;
+      height: 50px;
+      line-height: 30px;
+      @include Xlargetop(400px);
+      @include largetop(200px);
+      @include mediumtop(260px);
+      @include mediatop(300px);
+      @include padding();
+    }
+  }
+}

@@ -1,0 +1,1387 @@
+@charset "UTF-8";
+body {
+  font-family: "ヒラギノ角ゴ ProN W3", "Hiragino Sans W3", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif "";
+  background-image: url(../shiro_pc-assets/background.jpg);
+}
+
+@media (max-width: 575px) {
+  body {
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+}
+
+body header {
+  height: 690px;
+  color: #ffffff;
+  position: relative;
+  padding: 0;
+  background-image: url(../shiro_pc-assets/_shiro2.png);
+  background-size: cover;
+  background-position: center;
+}
+
+@media (max-width: 767px) {
+  body header {
+    height: 520px;
+  }
+}
+
+@media (max-width: 575px) {
+  body header {
+    background-image: url(../shiro_pc-assets/headersp.jpg);
+    height: 420px;
+  }
+}
+
+@media (max-width: 380px) {
+  body header {
+    height: 390px;
+  }
+}
+
+body header p {
+  margin-left: 10%;
+  padding-top: 3%;
+  font-size: 20px;
+}
+
+@media (max-width: 575px) {
+  body header p {
+    font-size: 2em;
+  }
+}
+
+body header #open {
+  top: 5%;
+  right: 3%;
+  font-weight: .2em;
+}
+
+@media (max-width: 575px) {
+  body header #open {
+    font-size: 2em;
+  }
+}
+
+@media (max-width: 575px) {
+  body header #open {
+    top: 4%;
+    right: 3%;
+  }
+}
+
+body header div {
+  margin: 0 auto;
+  padding-top: 12%;
+}
+
+body header div h1 {
+  font-size: 5em;
+}
+
+body header div h2 {
+  font-size: 1em;
+}
+
+body main {
+  margin-top: 100px;
+}
+
+body main .sen {
+  margin: 20px auto;
+}
+
+body main #concept {
+  height: 820px;
+}
+
+@media (max-width: 991px) {
+  body main #concept {
+    height: 700px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  body main #concept {
+    height: 660px;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  body main #concept {
+    height: 560px;
+  }
+}
+
+@media (max-width: 380px) {
+  body main #concept {
+    height: 400px;
+  }
+}
+
+@media (max-width: 767px) {
+  body main #concept #conceptsen {
+    margin-top: 5%;
+  }
+}
+
+body main #concept p {
+  color: #2b2b2b;
+  letter-spacing: 0.08em;
+  font-size: 16px;
+  line-height: 2;
+}
+
+@media (max-width: 380px) {
+  body main #concept p {
+    font-size: .8em;
+  }
+}
+
+body main #concept img {
+  z-index: 3;
+}
+
+body main #concept #mainimg {
+  width: 100vw;
+}
+
+body main #graysp1 {
+  top: 350px;
+}
+
+@media (max-width: 1199px) {
+  body main #graysp1 {
+    top: 380px;
+  }
+}
+
+@media (max-width: 991px) {
+  body main #graysp1 {
+    top: 320px;
+  }
+}
+
+@media (max-width: 767px) {
+  body main #graysp1 {
+    top: 400px;
+  }
+}
+
+@media (max-width: 575px) {
+  body main #graysp1 {
+    top: 380px;
+  }
+}
+
+@media (max-width: 380px) {
+  body main #graysp1 {
+    top: 320px;
+  }
+}
+
+@media (max-width: 576px) {
+  body main #graysp1 {
+    margin: 0 auto;
+  }
+}
+
+body main #graysp2 {
+  top: 3200px;
+  height: 600px;
+}
+
+@media (max-width: 991px) and (min-width: 575px) {
+  body main #graysp2 {
+    height: 400px;
+  }
+}
+
+@media (max-width: 1199px) {
+  body main #graysp2 {
+    top: 2500px;
+  }
+}
+
+@media (max-width: 991px) {
+  body main #graysp2 {
+    top: 2000px;
+  }
+}
+
+@media (max-width: 767px) {
+  body main #graysp2 {
+    top: 1600px;
+  }
+}
+
+@media (max-width: 575px) {
+  body main #graysp2 {
+    top: 3550px;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  body main #graysp2 {
+    height: 400px;
+  }
+}
+
+@media (max-width: 380px) {
+  body main #graysp2 {
+    top: 3350px;
+  }
+}
+
+body main #works {
+  color: #2b2b2b;
+  top: 50px;
+  z-index: 2;
+  height: 1700px;
+}
+
+@media (max-width: 991px) {
+  body main #works {
+    height: 1200px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  body main #works {
+    height: 800px;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  body main #works {
+    height: 2800px;
+  }
+}
+
+@media (max-width: 380px) {
+  body main #works {
+    height: 2800px;
+  }
+}
+
+@media (max-width: 991px) {
+  body main #works {
+    top: 80px;
+  }
+}
+
+@media (max-width: 767px) {
+  body main #works {
+    top: 100px;
+  }
+}
+
+@media (max-width: 575px) {
+  body main #works {
+    top: 90px;
+  }
+}
+
+@media (max-width: 380px) {
+  body main #works {
+    top: 120px;
+  }
+}
+
+@media (max-width: 575px) {
+  body main #works {
+    padding: 0;
+    margin: 0;
+  }
+}
+
+body main #works > h1 {
+  font-size: 3em;
+}
+
+@media screen and (max-width: 768px) {
+  body main #works > h1 {
+    font-size: 2em;
+  }
+}
+
+@media (max-width: 767px) {
+  body main #works #flexzone {
+    width: 100%;
+  }
+}
+
+@media (max-width: 575px) {
+  body main #works #flexzone {
+    display: none;
+  }
+}
+
+body main #works #flexzone #flex-start {
+  justify-items: start;
+}
+
+@media (max-width: 575px) {
+  body main #works #flexzone #flex-start {
+    display: none;
+  }
+}
+
+@media (max-width: 575px) {
+  body main #works #flexzone #flex-end {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  body main #works #flexzone #flex-end {
+    width: 100%;
+    height: 1200px;
+  }
+}
+
+body main #works #flexzone #flex-end img {
+  width: 100%;
+}
+
+@media (max-width: 575px) {
+  body main #works #flexzone #flex-end #shiro4 {
+    display: none;
+  }
+}
+
+body main #works #flexzone #flex-end #shiro5 {
+  margin-top: 60%;
+}
+
+@media (max-width: 575px) {
+  body main #works #flexzone #flex-end #shiro5 {
+    width: 520px;
+    max-width: 90%;
+    position: absolute;
+    right: 0;
+    top: 1908px;
+  }
+}
+
+@media (max-width: 380px) {
+  body main #works #flexzone #flex-end #shiro5 {
+    top: 1350px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  body main #works #flexzone #flex-end #shiro5 {
+    margin-top: 120px;
+  }
+}
+
+@media (max-width: 575px) {
+  body main #works #flexzone #flex-end #shiro5 {
+    margin-top: 0;
+  }
+}
+
+body main #works #spcontent {
+  display: none;
+}
+
+@media screen and (max-width: 575px) {
+  body main #works #spcontent {
+    height: 2700px;
+  }
+}
+
+@media (max-width: 575px) {
+  body main #works #spcontent {
+    display: block;
+  }
+}
+
+body main #works #spcontent #giftsp {
+  height: 520px;
+}
+
+@media (max-width: 380px) {
+  body main #works #spcontent #giftsp {
+    height: 535px;
+  }
+}
+
+body main #works #spcontent #giftsp #fs1 {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+@media (max-width: 575px) {
+  body main #works #spcontent #giftsp #fs1 {
+    width: 540px;
+    max-width: 90%;
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  body main #works #spcontent #giftsp #fs1 {
+    height: 400px;
+  }
+}
+
+body main #works #spcontent #giftsp #giftsptext {
+  bottom: 0;
+  width: 78%;
+}
+
+body main #works #spcontent #decosp {
+  height: 710px;
+}
+
+@media (max-width: 380px) {
+  body main #works #spcontent #decosp {
+    height: 720px;
+  }
+}
+
+body main #works #spcontent #decosp #shiro44 {
+  -o-object-fit: cover;
+     object-fit: cover;
+  right: 0;
+}
+
+@media (max-width: 575px) {
+  body main #works #spcontent #decosp #shiro44 {
+    display: block;
+  }
+}
+
+@media (max-width: 575px) {
+  body main #works #spcontent #decosp #shiro44 {
+    width: 520px;
+    max-width: 90%;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  body main #works #spcontent #decosp #shiro44 {
+    height: 600px;
+  }
+}
+
+body main #works #spcontent #decosp #decosptext {
+  bottom: 0;
+  width: 78%;
+  right: 4%;
+}
+
+body main #works #spcontent #weddingsp {
+  height: 720px;
+}
+
+body main #works #spcontent #weddingsp #fs2 {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+@media (max-width: 575px) {
+  body main #works #spcontent #weddingsp #fs2 {
+    width: 540px;
+    max-width: 90%;
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+}
+
+@media (max-width: 575px) {
+  body main #works #spcontent #weddingsp #fs2 {
+    left: 0;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  body main #works #spcontent #weddingsp #fs2 {
+    height: 600px;
+  }
+}
+
+body main #works #spcontent #weddingsp #weddingsptext {
+  bottom: 0;
+  width: 78%;
+}
+
+body main #works #spcontent #forsp {
+  height: 520px;
+}
+
+body main #works #spcontent #forsp #shiro55 {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+@media (max-width: 575px) {
+  body main #works #spcontent #forsp #shiro55 {
+    display: block;
+  }
+}
+
+@media (max-width: 575px) {
+  body main #works #spcontent #forsp #shiro55 {
+    width: 520px;
+    max-width: 90%;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  body main #works #spcontent #forsp #shiro55 {
+    height: 400px;
+  }
+}
+
+body main #works #spcontent #forsp #forsptext {
+  bottom: 0;
+  width: 78%;
+  right: 4%;
+}
+
+body main #works p {
+  color: #2b2b2b;
+  letter-spacing: 0.08em;
+  font-size: 16px;
+  line-height: 2;
+}
+
+@media screen and (max-width: 991px) {
+  body main #works p {
+    font-size: .9em;
+    line-height: 1.5;
+  }
+}
+
+@media (max-width: 767px) {
+  body main #works p {
+    font-size: .7em;
+    line-height: 1.5;
+  }
+}
+
+@media (max-width: 575px) {
+  body main #works #workstext {
+    display: none;
+  }
+}
+
+body main #works #workstext #gift {
+  height: 100px;
+  width: 35%;
+  top: 650px;
+  left: 3%;
+}
+
+@media (max-width: 1199px) {
+  body main #works #workstext #gift {
+    top: 570px;
+  }
+}
+
+@media (max-width: 991px) {
+  body main #works #workstext #gift {
+    width: 30%;
+    left: 5%;
+    top: 420px;
+  }
+}
+
+@media (max-width: 767px) {
+  body main #works #workstext #gift {
+    left: 7%;
+    top: 310px;
+  }
+}
+
+@media (max-width: 575px) {
+  body main #works #workstext #gift {
+    width: 75%;
+    top: 19%;
+  }
+}
+
+@media (max-width: 380px) {
+  body main #works #workstext #gift {
+    top: 450px;
+  }
+}
+
+@media (max-width: 575px) {
+  body main #works #workstext #gift {
+    left: 3%;
+  }
+}
+
+@media (max-width: 380px) {
+  body main #works #workstext #gift {
+    left: 7%;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  body main #works #workstext #gift h1 {
+    font-size: 1.5em;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  body main #works #workstext #gift h1 {
+    font-size: 1.3em;
+  }
+}
+
+body main #works #workstext #decoration {
+  height: 100px;
+  width: 32%;
+  top: 820px;
+  right: 8%;
+}
+
+@media (max-width: 1199px) {
+  body main #works #workstext #decoration {
+    top: 690px;
+  }
+}
+
+@media (max-width: 991px) {
+  body main #works #workstext #decoration {
+    width: 30%;
+    right: 10%;
+    top: 510px;
+  }
+}
+
+@media (max-width: 767px) {
+  body main #works #workstext #decoration {
+    right: 14%;
+    top: 350px;
+    width: 25%;
+  }
+}
+
+@media (max-width: 575px) {
+  body main #works #workstext #decoration {
+    width: 75%;
+    top: 1400px;
+  }
+}
+
+@media (max-width: 380px) {
+  body main #works #workstext #decoration {
+    width: 70%;
+    top: 920px;
+  }
+}
+
+@media (max-width: 575px) {
+  body main #works #workstext #decoration {
+    right: 17%;
+  }
+}
+
+@media (max-width: 380px) {
+  body main #works #workstext #decoration {
+    right: 7%;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  body main #works #workstext #decoration h1 {
+    font-size: 1.5em;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  body main #works #workstext #decoration h1 {
+    font-size: 1.3em;
+  }
+}
+
+body main #works #workstext #wedding {
+  height: 100px;
+  width: 35%;
+  top: 1570px;
+  left: 3%;
+}
+
+@media (max-width: 1199px) {
+  body main #works #workstext #wedding {
+    top: 1320px;
+  }
+}
+
+@media (max-width: 991px) {
+  body main #works #workstext #wedding {
+    width: 30%;
+    left: 5%;
+    top: 960px;
+  }
+}
+
+@media (max-width: 767px) {
+  body main #works #workstext #wedding {
+    left: 7%;
+    top: 680px;
+  }
+}
+
+@media (max-width: 575px) {
+  body main #works #workstext #wedding {
+    width: 75%;
+    top: 2160px;
+  }
+}
+
+@media (max-width: 380px) {
+  body main #works #workstext #wedding {
+    top: 1400px;
+  }
+}
+
+@media (max-width: 575px) {
+  body main #works #workstext #wedding {
+    left: 3%;
+  }
+}
+
+@media (max-width: 380px) {
+  body main #works #workstext #wedding {
+    left: 7%;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  body main #works #workstext #wedding h1 {
+    font-size: 1.5em;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  body main #works #workstext #wedding h1 {
+    font-size: 1.3em;
+  }
+}
+
+body main #works #workstext #foryourself {
+  height: 100px;
+  width: 32%;
+  top: 1450px;
+  right: 8%;
+}
+
+@media (max-width: 1199px) {
+  body main #works #workstext #foryourself {
+    top: 1210px;
+  }
+}
+
+@media (max-width: 991px) {
+  body main #works #workstext #foryourself {
+    width: 30%;
+    right: 10%;
+    top: 860px;
+  }
+}
+
+@media (max-width: 767px) {
+  body main #works #workstext #foryourself {
+    right: 14%;
+    top: 610px;
+    width: 25%;
+  }
+}
+
+@media (max-width: 575px) {
+  body main #works #workstext #foryourself {
+    width: 75%;
+    top: 2740px;
+  }
+}
+
+@media (max-width: 380px) {
+  body main #works #workstext #foryourself {
+    width: 70%;
+    top: 1760px;
+  }
+}
+
+@media (max-width: 575px) {
+  body main #works #workstext #foryourself {
+    right: 17%;
+  }
+}
+
+@media (max-width: 380px) {
+  body main #works #workstext #foryourself {
+    right: 7%;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  body main #works #workstext #foryourself h1 {
+    font-size: 1.5em;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  body main #works #workstext #foryourself h1 {
+    font-size: 1.3em;
+  }
+}
+
+body main #florist {
+  top: 800px;
+  height: 700px;
+}
+
+@media (max-width: 991px) {
+  body main #florist {
+    height: 650px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  body main #florist {
+    height: 600px;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  body main #florist {
+    height: 1500px;
+  }
+}
+
+@media (max-width: 380px) {
+  body main #florist {
+    height: 1200px;
+  }
+}
+
+@media (max-width: 1199px) {
+  body main #florist {
+    top: 100px;
+  }
+}
+
+@media (max-width: 991px) {
+  body main #florist {
+    top: 160px;
+  }
+}
+
+@media (max-width: 767px) {
+  body main #florist {
+    top: 220px;
+  }
+}
+
+@media (max-width: 575px) {
+  body main #florist {
+    top: 270px;
+  }
+}
+
+@media (max-width: 380px) {
+  body main #florist {
+    top: 210px;
+  }
+}
+
+@media (max-width: 575px) {
+  body main #florist {
+    padding: 0;
+    margin: 0;
+  }
+}
+
+body main #florist .row {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+@media (max-width: 575px) {
+  body main #florist .row {
+    display: block;
+  }
+}
+
+@media (max-width: 575px) {
+  body main #florist .row #fl1 {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 575px) {
+  body main #florist .row #fl1 {
+    display: block;
+  }
+}
+
+@media (max-width: 575px) {
+  body main #florist .row #fl1 #shiyu1 {
+    display: none;
+  }
+}
+
+body main #florist .row #fl1 #shiyu2 {
+  display: none;
+}
+
+@media (max-width: 575px) {
+  body main #florist .row #fl1 #shiyu2 {
+    display: block;
+  }
+}
+
+@media (max-width: 575px) {
+  body main #florist .row #fl2 {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 575px) {
+  body main #florist .row #fl2 #mao1 {
+    display: none;
+  }
+}
+
+body main #florist .row #fl2 #mao2 {
+  display: none;
+}
+
+@media (max-width: 575px) {
+  body main #florist .row #fl2 #mao2 {
+    display: block;
+  }
+}
+
+@media (max-width: 575px) {
+  body main #florist .row #fl3 {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 575px) {
+  body main #florist .row #fl3 #omichan1 {
+    display: none;
+  }
+}
+
+body main #florist .row #fl3 #omichan2 {
+  display: none;
+}
+
+@media (max-width: 575px) {
+  body main #florist .row #fl3 #omichan2 {
+    display: block;
+  }
+}
+
+body main #shopinformation {
+  top: 970px;
+  height: 431px;
+}
+
+@media screen and (max-width: 767px) {
+  body main #shopinformation {
+    height: 410px;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  body main #shopinformation {
+    height: 650px;
+  }
+}
+
+@media (max-width: 1199px) {
+  body main #shopinformation {
+    top: 150px;
+  }
+}
+
+@media (max-width: 991px) {
+  body main #shopinformation {
+    top: 170px;
+  }
+}
+
+@media (max-width: 767px) {
+  body main #shopinformation {
+    top: 240px;
+  }
+}
+
+@media (max-width: 575px) {
+  body main #shopinformation {
+    top: 350px;
+  }
+}
+
+@media (max-width: 575px) {
+  body main #shopinformation {
+    padding: 0;
+    margin: 0;
+  }
+}
+
+body main #shopinformation #shopsp {
+  display: none;
+}
+
+@media (max-width: 575px) {
+  body main #shopinformation #shopsp {
+    display: block;
+  }
+}
+
+body main #shopinformation #shoppc {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+@media (max-width: 575px) {
+  body main #shopinformation #shoppc {
+    display: none;
+  }
+}
+
+@media (max-width: 991px) {
+  body main #shopinformation #shop111 {
+    font-size: .8em;
+  }
+}
+
+@media (max-width: 767px) {
+  body main #shopinformation #shop111 {
+    font-size: .7em;
+  }
+}
+
+@media (max-width: 575px) {
+  body main #shopinformation #shop111 {
+    min-width: 100%;
+    line-height: 1.5em;
+    padding: 0;
+  }
+}
+
+@media (max-width: 380px) {
+  body main #shopinformation #shop111 {
+    font-size: .6em;
+    padding: 0;
+  }
+}
+
+body main #shopinformation #shop111 #shop1 {
+  margin: 0 auto;
+}
+
+@media (max-width: 575px) {
+  body main #shopinformation #shop111 #shop1 {
+    width: 40%;
+  }
+}
+
+body main #shopinformation #shop111 #shop1 #sp1 {
+  margin: 0 auto;
+  top: 10%;
+  left: 25%;
+}
+
+body main #shopinformation #shop111 #shop1 #sp2 {
+  top: 37%;
+  left: 25%;
+}
+
+body main #shopinformation #shop111 #shop1 #sp3 {
+  top: 58%;
+  left: 25%;
+}
+
+body main #shopinformation #shop111 #shop1 #sp4 {
+  top: 85%;
+  left: 25%;
+}
+
+body main #shopinformation #shop2 #s2p1 {
+  top: 8%;
+}
+
+@media (max-width: 575px) {
+  body main #shopinformation #shop2 #s2p1 {
+    top: 1%;
+  }
+}
+
+@media (max-width: 991px) {
+  body main #shopinformation #shop2 #s2p1 {
+    top: 0;
+  }
+}
+
+@media (max-width: 380px) {
+  body main #shopinformation #shop2 #s2p1 {
+    top: 4%;
+  }
+}
+
+body main #shopinformation #shop2 #s2p2 {
+  top: 37%;
+}
+
+@media (max-width: 575px) {
+  body main #shopinformation #shop2 #s2p2 {
+    top: 34%;
+  }
+}
+
+@media (max-width: 991px) {
+  body main #shopinformation #shop2 #s2p2 {
+    top: 35%;
+  }
+}
+
+@media (max-width: 380px) {
+  body main #shopinformation #shop2 #s2p2 {
+    top: 36%;
+  }
+}
+
+body main #shopinformation #shop2 #s2p3 {
+  top: 58%;
+}
+
+@media (max-width: 575px) {
+  body main #shopinformation #shop2 #s2p3 {
+    top: 55%;
+  }
+}
+
+@media (max-width: 991px) {
+  body main #shopinformation #shop2 #s2p3 {
+    top: 54%;
+  }
+}
+
+body main #shopinformation #shop2 #s2p4 {
+  top: 85%;
+}
+
+@media (max-width: 575px) {
+  body main #shopinformation #shop2 #s2p4 {
+    top: 76%;
+  }
+}
+
+@media (max-width: 991px) {
+  body main #shopinformation #shop2 #s2p4 {
+    top: 75%;
+  }
+}
+
+@media (max-width: 380px) {
+  body main #shopinformation #shop2 #s2p4 {
+    top: 80%;
+  }
+}
+
+body main #footer {
+  background-image: url(../shiro_pc-assets/shiro12.jpg);
+  background-size: cover;
+  top: 1250px;
+  height: 351px;
+}
+
+@media screen and (max-width: 767px) {
+  body main #footer {
+    height: 250px;
+  }
+}
+
+@media (max-width: 1199px) {
+  body main #footer {
+    top: 450px;
+  }
+}
+
+@media (max-width: 991px) {
+  body main #footer {
+    top: 200px;
+  }
+}
+
+@media (max-width: 767px) {
+  body main #footer {
+    top: 270px;
+  }
+}
+
+@media (max-width: 575px) {
+  body main #footer {
+    padding: 0;
+    margin: 0;
+  }
+}
+
+body main #footer h1 {
+  padding-top: 5%;
+}
+
+@media (max-width: 575px) {
+  body main #footer {
+    top: 300px;
+  }
+}
+
+@media (max-width: 575px) {
+  body main #footer {
+    background-image: url(../shiro_pc-assets/footerbacksp.jpg);
+    height: 400px;
+  }
+  body main #footer h1 {
+    padding-top: 20%;
+  }
+  body main #footer img {
+    padding-top: 5%;
+  }
+  body main #footer #ftext {
+    padding-top: 5%;
+  }
+}
+
+body main #footer #contact {
+  background-image: url(../shiro_pc-assets/mailbox.jpg);
+  width: 25%;
+  height: 52px;
+  padding-top: .5em;
+  margin: 0 auto;
+  line-height: 32px;
+}
+
+@media (max-width: 575px) {
+  body main #footer #contact .d-flex {
+    position: relative;
+  }
+}
+
+body main #footer #contact .d-flex img {
+  width: 40px;
+  height: 29px;
+  margin-top: -2em;
+  margin-right: 10px;
+}
+
+@media (max-width: 991px) {
+  body main #footer #contact .d-flex img {
+    margin-top: -1.5em;
+  }
+}
+
+@media (max-width: 575px) {
+  body main #footer #contact .d-flex img {
+    position: absolute;
+    top: 10px;
+    left: 10%;
+    height: 35px;
+  }
+}
+
+@media (max-width: 380px) {
+  body main #footer #contact .d-flex img {
+    position: absolute;
+    top: 12px;
+    left: 5%;
+  }
+}
+
+body main #footer #contact .d-flex p {
+  padding-bottom: 10px;
+  text-align: center;
+}
+
+@media (max-width: 380px) {
+  body main #footer #contact .d-flex p {
+    line-height: 20px;
+    padding-left: 20px;
+  }
+}
+
+@media (max-width: 991px) {
+  body main #footer #contact {
+    background-image: url(../shiro_pc-assets/fromsp.jpg);
+    background-size: cover;
+    width: 30%;
+  }
+}
+
+@media (max-width: 575px) {
+  body main #footer #contact {
+    width: 50%;
+    height: 13%;
+    margin-top: 3%;
+    font-size: .8em;
+  }
+}
+
+@media (max-width: 380px) {
+  body main #footer #contact {
+    width: 60%;
+  }
+  body main #footer #contact p {
+    margin-top: 3%;
+  }
+}
+
+body main #copy {
+  top: 1280px;
+  height: 50px;
+  line-height: 30px;
+}
+
+@media (max-width: 1199px) {
+  body main #copy {
+    top: 400px;
+  }
+}
+
+@media (max-width: 991px) {
+  body main #copy {
+    top: 200px;
+  }
+}
+
+@media (max-width: 767px) {
+  body main #copy {
+    top: 260px;
+  }
+}
+
+@media (max-width: 575px) {
+  body main #copy {
+    top: 300px;
+  }
+}
+
+@media (max-width: 575px) {
+  body main #copy {
+    padding: 0;
+    margin: 0;
+  }
+}
+/*# sourceMappingURL=style.css.map */
